@@ -1,0 +1,316 @@
+/* *********************/
+/* Importamos Fuente */
+/* *********************/
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+@import url('https://fonts.googleapis.com/css2? family= Dancing+Script:wght@700 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dancing Script';
+}
+
+/* me permite deslizar cuando hago clic en los links del menu */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f6fafc;
+}
+
+/* *********************/
+/* SECCION INICIO      */
+/* *********************/
+
+#inicio  {
+    background: linear-gradient(rgba(0,12,103,.7), rgba(0,12,103,.7)), url(/asset/img/fondo-inicio.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+
+}
+/* *********************/
+/*     ENCABEZADO      */
+/* *********************/
+#inicio .encabezado{
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;    
+}
+#inicio .encabezado header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+}
+#inicio .encabezado .logo {
+    display: flex;
+    align-items: center;
+    color: #00deff;
+    font-size: 25px;
+}
+#inicio .encabezado .logo i {
+    display: inline-block;
+    margin-right: 20px;
+}
+#inicio .encabezado nav a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    border: 2px solid transparent ;
+}
+#inicio .encabezado header nav a:hover {
+    border-bottom: 2px solid #ff5b0f;
+}
+#inicio .encabezado .redes a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 0 10px;
+}
+#inicio .encabezado .redes a:hover {
+    color: #ff5b00;
+
+}
+#inicio .encabezado .contenedor-img {
+    max-width: auto;
+    margin: auto;
+}
+#inicio .encabezado .contenedor-img img {
+    width: 100%;
+}
+/* *********************/
+/* Fin Seccion Encabezado */
+/* ********************* */
+
+/* *********************/
+/* Seccion Bienvenidos */
+/* ********************* */
+#inicio .saludo .presentacion {
+    max-width: 1100px;
+    height: 100vh;
+    margin: auto;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#inicio .saludo .presentacion .bienvenidos {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+#inicio .saludo .presentacion h2 {
+    font-family: 'Monnserrat';
+    font-size: 60px;
+    margin-bottom: 25px;
+    align-items: center;
+}
+#inicio .saludo .presentacion .descripcion {
+    font-family: 'Monnserrat';
+    max-width: 700px;
+    margin: 25px auto;
+    font-size: 18px;
+    text-align: center;
+}
+/* *********************/
+/* Fin Seccion Bienvenidos */
+/* *********************/
+
+/* *********************/
+/* FIN SECCION INICIO  */
+/* *********************/
+
+/* *********************/
+/* SECCION SOBRE MI    */
+/* *********************/
+#sobremi{
+    max-width: 1100px;
+    margin: auto;
+    padding: 100px 15px;
+    color: #111135;
+    display: flex;    
+}
+#sobremi .foto {
+    max-width: 400px;
+    margin-right: 80px;    
+}
+#sobremi .foto img {
+    padding: 20px;
+    width: 100%;
+    border-radius: 50px;
+    background-color: #f3f3f3;
+}
+#sobremi .contenido {
+    margin: 0 40px;
+}
+#sobremi .contenido .titulo {
+    font-family: 'Monserrat';
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+#sobremi .contenido h2 {
+    font-size: 60px;
+    font-weight: bold;
+    margin: 20px 0;
+    letter-spacing: 5px;
+}
+#sobremi .contenido h2 span {
+    color: #ff0000;
+}
+#sobremi .contenido h3 {
+    font-family: 'AR One Sans';
+    font-size: 30px;
+    text-decoration: underline;
+}
+#sobremi .contenido article {
+    font-size: small;
+    text-align: justify;
+}
+#sobremi .contenido button {
+    background: none;
+    width: fit-content;
+    padding: 5px 40px;
+    border: 2px solid #ff5b00;
+    color: #000000;
+    background: linear-gradient(top rigth #ff5b00, #ff9900);
+    transition: .5s;
+    cursor: pointer;
+}
+#sobremi .contenido button:hover {
+    transform: scale(1.1);
+}
+/* *********************/
+/* FIN SECCION SOBRE MI*/
+/* *********************/
+
+/* *********************/
+/* SECCION SERVICIOS Y SKILLS */
+/* *********************/
+/* *********************/
+/*     SERVICIOS       */
+/* *********************/
+#sevicios {
+    padding: 100px 15px;
+    text-align: center;
+    background-color: #f3f3f3;
+}
+#servicios .titulo {
+    text-align: center ;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #ff0000;
+    text-decoration: underline;
+    text-decoration-color: #ff0000;
+    text-decoration-thickness: 5px;
+}
+#servicios .descripcion {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1150px;
+    margin: 30px auto;
+}
+#servicios .descripcion .servicio {
+    max-width: 350px;
+    background-color: #fff;
+    padding: 30px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: .5s;
+}
+#servicios .descripcion .servicio:hover {
+    box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
+}
+#servicios .descripcion .servicio .icono {
+    background-color: #deb;
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+#servicios .descripcion .servicio h4 {
+    font-size: 20px;
+    margin-bottom: 25px;
+    text-align: center;
+       
+}
+#servicios .descripcion .servicio hr {
+    width: 30%;
+    margin: auto;
+    color: #000;
+    margin-bottom: 25px;
+}
+#servicios .descripcion .servicio ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;    
+}
+#servicios .descripcion .servicio p {
+    font-size: 14px;
+    line-height: 22px;
+}
+/* *********************/
+/*       SKILLS        */
+/* *********************/
+#contenedor-skills {
+    background: linear-gradient(#eb5a5acc, rgba(33, 16, 16, .8)) , url(/asset/img/fondo-skills.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff ;
+    background-position: center center ;
+    padding: 100px 0;
+    text-align: center;
+}
+#contenedor-skills .skills {
+    max-width: 600px;
+    margin: 30px auto;
+
+}
+#contenedor-skills .skills .info {
+    display: flex;
+    justify-content: space-between;
+}
+#contenedor-skills .skills .lista {
+    display: inline-block;
+    margin-right: 20px;
+    height: 10px;
+    width: 10px;
+    background-color: #fff;
+}
+#contenedor-skills .skills .barra-prog {
+    width: 100%;
+    background-color: #ccc;
+    height: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+#contenedor-skills .skills .barra-prog .barra {
+    background-color: #919191;
+    width: 95%;
+    height: 100%;
+    margin: 10px 0px;
+    border-radius: 10px;
+    transition: .5s;
+}
+/* *********************/
+/* FIN SECCION SERVICIOS Y SKILLS*/
+/* *********************/
