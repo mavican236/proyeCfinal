@@ -4,6 +4,7 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat);
 @import url('https://fonts.googleapis.com/css2? family= Dancing+Script:wght@700 & display=swap');
 @import url('https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
 
 * {
     margin: 0;
@@ -319,9 +320,9 @@ body {
 /* INICIO SECCION TRABAJOS */
 /* *********************/
 #trabajos {
-    max-width: 1100px;
+    max-width: 100%;
     margin: auto;
-    padding: 0 20px;  
+    padding: 100px 20px;  
 }
 #trabajos h2 {
     text-align: center;
@@ -346,11 +347,188 @@ body {
 .borde {
     border: 3px solid #ff5b00 !important;
 }
+#trabajos .galeria {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+}
 #trabajos .galeria .item img {
     width: 100%;
-    height: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block; 
+}
+#trabajos .galeria .item {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #8d8d8d;
+    border-radius: 10px;
+}
+#trabajos .galeria .item .descripcion {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    background-color: #fff;
+    width: 100%;
+    padding: 20px;
+    opacity: 0;
+    transition: .3s;
+}
+#trabajos .galeria .item .descripcion h3 {
+    color: #000;
+    margin-bottom: 20px;
+}
+#trabajos .galeria .item .descripcion span {
+    color: #8d8d8d;
+    display: inline-block;
+    border: 2px solid #8d8d8d;
+    margin: 0 3px;
+    padding: 0 5px;
+}
+#trabajos .galeria .item .descripcion a{
     display: block;
+    margin: 20px;
+    text-decoration: none;
+    color: #007be5;
+    font-weight: bold;
+}
+#trabajos .galeria .item:hover .descripcion {
+    opacity: 1;
+    top: 0;
 }
 /* *********************/
 /* FIN SECCION TRABAJOS */
+/* *********************/
+/* *********************/
+/* INICIO SECCION CONTACTO*/
+/* *********************/
+#contacto {
+    background-image: url(/asset/img/contact_bg.png);
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 0px;
+}
+#contacto .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+#contacto h2 {
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+#contacto .contenido-formulario {
+    display: flex;
+}
+#contacto .formulario {
+    width: 50%;
+    padding: 30px;
+    position: relative;
+}
+#contacto .formulario input, .contacto .formulario textarea {
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 25px;
+    background-color: #252A2E;
+    color: #fff;
+    font-size: 18px;
+}
+#contacto button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+#contacto button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1CB698;
+    z-index: -1;
+    transition: 1s;
+}
+#contacto button:hover .overlay {
+    width: 100%;
+}
+#contacto .ubicacion img {
+    width: 100%;
+}
+#contacto .ubicacion .info {
+    position: relative;
+    top: -30%;
+    background-color: #252A2E;
+    padding: 20px;	
+    max-width: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+}
+#contacto .ubicacion .info ul {
+    list-style: none;
+}
+#contacto .ubicacion .info ul li {
+    margin-bottom: 20px;
+}
+#contacto .ubicacion .info ul li i {
+    color: #1CB698;
+    display: inline-block;
+    margin-right: 20px;
+}
+/* *********************/
+/*     INICIO FOOTER   */
+/* *********************/
+footer {
+    background-color: #252A2E;
+    color: #fff;
+    padding: 30px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;    
+}
+footer .redes {
+    margin-bottom: 20px;
+}
+footer .redes a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 40px 5px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 20px;
+    transition: .3s;
+
+}
+footer .arriba {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #1CB698;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+/* *********************/
+/*     FIN FOOTER      */
 /* *********************/
